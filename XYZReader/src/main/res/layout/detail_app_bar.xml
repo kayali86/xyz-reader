@@ -4,6 +4,7 @@
     android:id="@+id/appbar"
     android:layout_width="match_parent"
     android:layout_height="@dimen/detail_app_bar_height"
+    android:elevation="@dimen/mini_elevation"
     android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
 
     <android.support.design.widget.CollapsingToolbarLayout
@@ -30,15 +31,16 @@
         <android.support.v7.widget.Toolbar
             android:id="@+id/detail_toolbar"
             android:layout_width="match_parent"
-            android:layout_height="?attr/actionBarSize"
+            android:layout_height="@dimen/detail_tool_bar_height"
             app:layout_collapseMode="pin"
             app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
 
             <ImageButton
-                android:paddingTop="@dimen/large_margin"
+                android:paddingTop="@dimen/up_button_top_margin"
+                android:paddingBottom="@dimen/small_margin"
                 android:id="@+id/action_up"
                 android:layout_width="wrap_content"
-                android:layout_height="?actionBarSize"
+                android:layout_height="@dimen/detail_tool_bar_height"
                 android:background="?selectableItemBackgroundBorderless"
                 android:src="@drawable/ic_arrow_back" />
 
